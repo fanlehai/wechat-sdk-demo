@@ -65,7 +65,7 @@ wx.ready(function(){
   // 2.1 监听“分享给朋友”，按钮点击、自定义分享内容及分享结果接口
   document.querySelector('#updateAppMessageShareData').onclick = function () {
 
-  console.log("updateAppMessageShareData");
+  console.log("updateAppMessageShareData******");
     // wx.onMenuShareAppMessage({
     //   title: '互联网之子',
     //   desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
@@ -92,7 +92,7 @@ wx.ready(function(){
       wx.updateAppMessageShareData({ 
           title: '互联网之子', // 分享标题
           desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事', // 分享描述
-          link: 'http://movie.douban.com/subject/25785114/', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+          link: 'http://www.learn-anything.cn/page?v=9be6a001e57c4f058b2c1a496017e1a6', // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
           imgUrl: 'http://demo.open.weixin.qq.com/jssdk/images/p2166127561.jpg', // 分享图标
           success: function () {
             // 设置成功
