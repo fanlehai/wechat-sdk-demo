@@ -97,7 +97,13 @@ wx.ready(function(){
           success: function () {
             // 设置成功
             alert('已分享');
-          }
+          },
+            cancel: function (res) {
+              alert('已取消');
+            },
+            fail: function (res) {
+              alert(JSON.stringify(res));
+            }
   });
 
 // })
