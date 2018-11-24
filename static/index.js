@@ -63,7 +63,9 @@ wx.ready(function(){
 
    // 2. 分享接口
   // 2.1 监听“分享给朋友”，按钮点击、自定义分享内容及分享结果接口
-  document.querySelector('#onMenuShareAppMessage').onclick = function () {
+  document.querySelector('#updateAppMessageShareData').onclick = function () {
+
+  console.log("updateAppMessageShareData");
     // wx.onMenuShareAppMessage({
     //   title: '互联网之子',
     //   desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事，那些所谓本来如此，注定如此的事，它们其实没有非得如此，事情是可以改变的。更重要的是，有些事既然错了，那就该做出改变。',
@@ -86,7 +88,7 @@ wx.ready(function(){
     // alert('已注册获取“发送给朋友”状态事件');
 
     // 自定义“分享给朋友”及“分享到QQ”按钮的分享内容（1.4.0）
-    wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
+    // wx.ready(function () {   //需在用户可能点击分享按钮前就先调用
       wx.updateAppMessageShareData({ 
           title: '互联网之子', // 分享标题
           desc: '在长大的过程中，我才慢慢发现，我身边的所有事，别人跟我说的所有事', // 分享描述
@@ -96,7 +98,9 @@ wx.ready(function(){
             // 设置成功
             alert('已分享');
           }
-  });})
+  });
+
+// })
 
 
   };
