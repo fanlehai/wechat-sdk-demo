@@ -18,11 +18,11 @@ app.locals.basedir = './'
 
 var port = 4567 ;  //BAE 百度应用引擎默认端口号
  //中间件定义
-app.use(express.logger());
-app.use(express.compress());
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(express.cookieParser());
+// app.use(express.logger());
+// app.use(express.compress());
+// app.use(express.bodyParser());
+// app.use(express.methodOverride());
+// app.use(express.cookieParser());
 
 //静态资源
 

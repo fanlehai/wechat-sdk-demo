@@ -9,7 +9,7 @@ exports.sign = function (url,callback) {
 		jsapi_ticket;
 	if(cache.get('ticket')){
 		jsapi_ticket = cache.get('ticket');
-		console.log('1' + 'jsapi_ticket=' + jsapi_ticket + '&noncestr=' + noncestr + '&timestamp=' + timestamp + '&url=' + url);
+		console.log('1 ： jsapi_ticket=' + jsapi_ticket + '&noncestr=' + noncestr + '&timestamp=' + timestamp + '&url=' + url);
 		callback({
 			noncestr:noncestr,
 			timestamp:timestamp,
